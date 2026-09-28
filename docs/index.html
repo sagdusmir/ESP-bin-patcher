@@ -155,6 +155,7 @@
     #chip-locked { display: none; }
     body.form-locked #chip { display: none; }
     body.form-locked #chip-locked { display: block; }
+    body.form-locked .chip-match-hint,
     body.form-locked .chip-override-hint {
       display: none;
     }
@@ -319,7 +320,7 @@
 
   <h2>3. Patch firmware</h2>
   <div id="chip-field">
-    <p class="muted">Chip family must match the board you will flash. Detected from the image header<span class="chip-override-hint">; override if needed</span>.</p>
+    <p class="muted"><span class="chip-match-hint">Chip family must match the board you will flash. </span>Detected from the image header<span class="chip-override-hint">; override if needed</span>.</p>
     <label for="chip" id="chip-label">ESP Web Tools chip family</label>
     <select id="chip"></select>
     <input id="chip-locked" type="text" readonly autocomplete="off">
