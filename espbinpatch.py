@@ -53,7 +53,7 @@ from dataclasses import dataclass
 from io import StringIO
 from pathlib import Path
 
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 
 IMAGE_MAGIC = 0xE9
 CHECKSUM_INIT = 0xEF
